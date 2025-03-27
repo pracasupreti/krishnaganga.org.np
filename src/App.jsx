@@ -1,10 +1,13 @@
 import React from 'react'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 function App() {
   return (
-    <>
-      <h2 className='text-red-600 text-center'>hello my name is abahy </h2>
-    </>
+    <div>
+      <Header/>
+      <Footer/>
+    </div>
   )
 }
 
