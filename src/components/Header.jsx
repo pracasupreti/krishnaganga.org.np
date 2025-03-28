@@ -32,7 +32,7 @@ function Header() {
               </Link>
             </div>
 
-            <ul className='flex gap-6 capitalize text-black font-bold text-[18px]'>
+            <ul className='flex gap-7 capitalize text-black font-bold text-[18px]'>
               <li className="relative">
                 <Link className="relative pb-1 text-black transition-all before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-[#ed1b24] before:transition-all before:duration-300 hover:before:w-full" to={'/'}>Home</Link>
               </li>
@@ -61,7 +61,6 @@ function Header() {
               <a href="#" className='px-4 py-2 hover:bg-[#465e88] bg-[#ed1b24] ease-in duration-200'>Volunteer</a>
             </div>
           </section>
-
         </header>
       </section>
       <Routes>
