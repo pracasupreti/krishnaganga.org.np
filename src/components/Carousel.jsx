@@ -30,17 +30,22 @@ function Carousel() {
           <img src="src/assets/crousel/slide-banner-03.jpg" alt="banner-3" />
         </SwiperSlide>
       </Swiper>
-       <style jsx>{`
+      <style jsx>
+        {`
        .swiper-button-next, .swiper-button-prev 
-{
-    color: #ed1b24;
-    background-color: #ecc731;
-    padding: 30px;
-    border-radius: 100%;
-}
-        .swiper-button-next, .swiper-button-prev :hover
+        {
+          color: #ed1b24;
+          background-color: #ecc731;
+          padding: 30px;
+          border-radius: 100%;
+          transition: all 500ms ease;
+        }
+        .swiper-button-next:hover, .swiper-button-prev:hover
+        {
+          color: #465e88;
+        }
        `}
-       </style>
+      </style>
     </section>
   );
 }
