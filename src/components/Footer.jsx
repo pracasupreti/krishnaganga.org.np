@@ -30,8 +30,8 @@ function Footer() {
       </footer>
       <section className='bg-[#2a2928] py-5 px-3'>
         <div className='lg:flex justify-between container mx-auto text-[#cccc] text-[15px]'>
-          <p>© Copyright 2024, All Rights Reserved by Krishna Ganga HOPE TRUST.</p>
-          <p>Technology Partner:<a href='https://sriyog.com/consulting' className='text-[#3a7ee4] hover:text-blue-400'>SRIYOG Consulting, Kathmandu</a></p>
+          <p>© Copyright 2025, All Rights Reserved by Krishna Ganga HOPE TRUST.</p>
+          <p>Technology Partner :<a href='https://sriyog.com/consulting' className='text-[#3a7ee4] hover:text-blue-400'> SRIYOG Consulting, Kathmandu</a></p>
           </div>
         </section>
     </>

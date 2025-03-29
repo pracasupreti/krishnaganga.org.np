@@ -46,7 +46,7 @@ function Header() {
                 <Link className="relative pb-1 text-black transition-all before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-[#ed1b24] before:transition-all before:duration-300 hover:before:w-full" to={'/fee'}>fee</Link>
               </li>
               <li className="relative">
-                <Link className="relative pb-1 text-black transition-all before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-[#ed1b24] before:transition-all before:duration-300 hover:before:w-full" to={'/banned'}>banned items</Link>
+                <Link className="relative pb-1 text-black transition-all before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-[#ed1b24] before:transition-all before:duration-300 hover:before:w-full" to={'/banned-items'}>banned items</Link>
               </li>
               <li className="relative">
                 <Link className="relative pb-1 text-black transition-all before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-[#ed1b24] before:transition-all before:duration-300 hover:before:w-full" to={'/duration'}>duration</Link>
@@ -68,7 +68,7 @@ function Header() {
         <Route path='/about' element={<About />} />
         <Route path='/fee' element={<Fee />} />
         <Route path='/duration' element={<Duration />} />
-        <Route path='/banned' element={<Banned />} />
+        <Route path='/banned-items' element={<Banned />} />
         <Route path='/treatment' element={<Treatment />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
