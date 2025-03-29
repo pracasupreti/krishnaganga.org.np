@@ -5,9 +5,9 @@ function ThingsToProvide() {
         <>
             <section className='container mx-auto my-8'>
                 <h2 className='text-center text-3xl font-bold mb-8'>
-                    <span className='pb-1' style={{ borderBottom: "4px solid transparent", borderImage: "linear-gradient(to right, red, yellow, blue) 1" }}>Our Treatment</span>
+                    <span className='pb-1' style={{ borderBottom: "4px solid transparent", borderImage: "linear-gradient(to right, red, yellow, blue) 1" }}>YOU SHOULD CARRY THE MENTIONED BELOW</span>
                 </h2>
-                <ul className='list-disc text-[#888787]'>
+                <ul className='list-disc text-[#888787] ms-5'>
                     <li>Client's proof of identity.</li>
                     <li>Letter by Doctor Advising him Rehabilitation for addiction.</li>
                     <li>Perfumes</li>
