@@ -16,7 +16,7 @@ function Home() {
             <Carousel />
             <section className='container mx-auto my-[60px]'>
                 <h2 className='text-center text-3xl font-bold mb-6'>
-                    <span className='pb-1' style={{ borderBottom: "4px solid transparent", borderImage: "linear-gradient(to right, green, yellow) 1" }}>Dedicated team of counsellor, psychologist, psychiatrist & other team of Doctors</span>
+                    <span className='pb-1' style={{ borderBottom: "4px solid transparent", borderImage: "linear-gradient(to right, red, yellow, blue) 1" }}>Dedicated team of counsellor, psychologist, psychiatrist & other team of Doctors</span>
                 </h2>
 
                 <div className='mx-auto lg:w-[1100px] mt-[60px]'>
@@ -98,7 +98,7 @@ function Home() {
             </section>
             <section className='container mx-auto my-6 bg-[#fbfaf8] py-6'>
                 <h2 className='text-center text-3xl font-bold mb-8'>
-                    <span className='pb-1' style={{ borderBottom: "4px solid transparent", borderImage: "linear-gradient(to right, green, yellow) 1" }}>Rejuvenating Activities</span>
+                    <span className='pb-1' style={{ borderBottom: "4px solid transparent", borderImage: "linear-gradient(to right, red, yellow, blue) 1" }}>Rejuvenating Activities</span>
                 </h2>
 
                 <div className='lg:flex justify-between gap-20'>

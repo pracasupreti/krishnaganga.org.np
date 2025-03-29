@@ -7,6 +7,7 @@ import Fee from '../pages/Fee'
 import Duration from '../pages/Duration'
 import Banned from '../pages/Banned'
 import Treatment from '../pages/Treatment'
+import ThingsToProvide from '../pages/ThingsToProvide'
 
 function Header() {
   return (
@@ -24,11 +25,11 @@ function Header() {
             <li><img className='w-[25px] h-[25px]' src="src\assets\icon\pinterest.svg" alt="pinterest" /></li>
           </ul>
         </section>
-        <header className='bg-[#ecc731] p-2'>
+        <header className='bg-[#ecc731] p-1'>
           <section className='container mx-auto flex items-center justify-between'>
             <div>
               <Link to={'/'}>
-              <img src="src/assets/logo/krishna-ganga-logo.png" alt="Krishna Ganga Drugs & Alcohol Deaddiction & Rehabilitation Center" />
+                <img src="src/assets/logo/krishna-ganga-logo.png" alt="Krishna Ganga Drugs & Alcohol Deaddiction & Rehabilitation Center" />
               </Link>
             </div>
 
@@ -39,8 +40,18 @@ function Header() {
               <li className="relative">
                 <Link className="relative pb-1 text-black transition-all before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-[#ed1b24] before:transition-all before:duration-300 hover:before:w-full" to={'/about'}>about</Link>
               </li>
-              <li className="relative">
-                <Link className="relative pb-1 text-black transition-all before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-[#ed1b24] before:transition-all before:duration-300 hover:before:w-full" to={'/treatment'}>treatment</Link>
+              <li className="relative group">
+                <Link className="relative pb-1 text-black transition-all before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-[#ed1b24] before:transition-all before:duration-300 hover:before:w-full" to={'/treatment'}>
+                  treatment
+                </Link>
+                {/* Dropdown Menu */}
+                <ul className="absolute left-0 top-[25px] hidden group-hover:block bg-[#ecc731] text-black rounded shadow-md">
+                  <li>
+                    <Link to="/things-to-provide" className="block px-2 py-1 text-center hover:bg-[#ed1b24] hover:text-white transition-all lg:w-[170px]">
+                      Things to Provide
+                    </Link>
+                  </li>
+                </ul>
               </li>
               <li className="relative">
                 <Link className="relative pb-1 text-black transition-all before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-[#ed1b24] before:transition-all before:duration-300 hover:before:w-full" to={'/fee'}>fee</Link>
@@ -71,6 +82,7 @@ function Header() {
         <Route path='/banned-items' element={<Banned />} />
         <Route path='/treatment' element={<Treatment />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/things-to-provide' element={<ThingsToProvide />} />
       </Routes>
     </>
   )
