@@ -70,7 +70,6 @@ function Home() {
 
     let treatmentData = [
         {
-            title: "Our Treatment Procedures & Methods",
             image: "src/assets/treatment/personal.jpg",
             alt: "Personal Treatment",
             heading: "Tailored to personal history, family history, and circumstances",
@@ -78,20 +77,18 @@ function Home() {
                 "Our program focuses on physical and mental recovery, self-evaluation, self-esteem, and self-confidence to support clients in abstaining from addiction and leading a happy life. We adhere strictly to a key essence of family support throughout the program."
         },
         {
-            title: "Programme",
             image: "src/assets/treatment/behaviour-therapy-footer.jpg",
-            alt: "Behaviour Therapy",
-            heading: "Behaviour Therapy",
+            alt: "Personalized treatment, evidence-based approach, and skill development.",
+            heading: "Personalized, evidence-based, and skill-building.",
             description:
-                "Behaviour Therapy helps individuals understand how their behavior influences their environment, providing specific techniques to modify and improve their responses."
+                "Our program is tailored to each person, using proven methods to support their recovery. We focus on building essential skills that help clients handle life's challenges and maintain lasting sobriety. With personalized care and practical tools, we guide individuals toward a stronger, more positive future."
         },
         {
-            title: "",
             image: "src/assets/treatment/Relapse.jpg",
             alt: "Relapse Prevention Program",
-            heading: "Relapse Prevention Program",
+            heading: "Personalized Approach, Family Involvement, Contextual Focus",
             description:
-                "Relapse prevention programs help reduce the risk of returning to self-destructive behavior, focusing on long-term strategies to maintain recovery."
+                "Our program offers a personalized recovery plan tailored to each individual's unique needs. We emphasize strong family involvement to create a supportive recovery environment. By focusing on personal and family history, we ensure a comprehensive and lasting approach to overcoming addiction."
         }
     ];
 
@@ -114,16 +111,31 @@ function Home() {
                         autoplay={{ delay: 5000, disableOnInteraction: false }} // Auto play every 5 sec
                     >
                         {post.map((a) => (
-                            <SwiperSlide className='mb-6 w-full group'>
+                            <SwiperSlide className='mb-[40px] w-full group'>
                                 <div className='flex flex-col gap-4'>
                                     <p className='text-center text-[17px]'>{a.title}</p>
-                                    <div className='w-full overflow-hidden'>
+                                    <div className='w-full overflow-hidden rounded-lg'>
                                         <img className='lg:h-[245px] mx-auto group-hover:scale-105 duration-500' src={a.imgSrc} alt={a.alt} />
                                     </div>
                                     <p className='text-[#333] text-wrap'>Relapse prevention programs can help reduce the risk of a return to self-destructive behavior.</p>
                                 </div>
                             </SwiperSlide>
                         ))}
+                        <style jsx global>
+  {`
+    
+
+    /* Ensure pagination bullets are yellow */
+    .swiper-pagination-bullet {
+      background-color: yellow !important;
+    }
+    
+    /* Ensure active pagination bullet is yellow */
+    .swiper-pagination-bullet-active {
+      background-color: yellow !important;
+    }
+  `}
+</style>
                     </Swiper>
                 </div>
             </section>
@@ -135,7 +147,7 @@ function Home() {
                 <div className='lg:flex justify-between gap-20'>
                     <div className='flex flex-col gap-8'>
                         <div className='flex gap-4'>
-                            <img className='bg-[#ecc731] p-2 h-[60px] w-[60px]' src="src/assets/icon/megaphone.svg" alt="megaphone" />
+                            <img className='bg-[#ecc731] p-2 h-[60px] w-[60px] rounded-lg' src="src/assets/icon/megaphone.svg" alt="megaphone" />
                             <div>
                                 <h2 className='text-[18px] font-bold'>Yoga & Meditation</h2>
                                 <p className='text-[#838282]'>Yoga Meditation is the art and science of systematically observing, accepting, understanding, and training each of the levels of our being</p>
@@ -143,7 +155,7 @@ function Home() {
                         </div>
 
                         <div className='flex gap-4'>
-                            <img className='bg-[#ecc731] p-2 h-[60px] w-[60px]' src="src/assets/icon/user.svg" alt="user" />
+                            <img className='bg-[#ecc731] p-2 h-[60px] w-[60px] rounded-lg' src="src/assets/icon/user.svg" alt="user" />
                             <div>
                                 <h2 className='text-[18px] font-bold'>Recreational Art / Craft / Music Therapy</h2>
                                 <p className='text-[#838282]'>We understand that illness and medical procedures have the potential to cause anxiety and fear in person. To ease these feelings and help your family.</p>
@@ -151,7 +163,7 @@ function Home() {
                         </div>
 
                         <div className='flex gap-4'>
-                            <img className='bg-[#ecc731] p-2 h-[60px] w-[60px]' src="src/assets/icon/heart.svg" alt="heart" />
+                            <img className='bg-[#ecc731] p-2 h-[60px] w-[60px] rounded-lg' src="src/assets/icon/heart.svg" alt="heart" />
                             <div>
                                 <h2 className='text-[18px] font-bold'>Well Equipped Library</h2>
                                 <p className='text-[#838282]'>We have well equipped library which consists of various books on different sectors and subjects.</p>
@@ -165,10 +177,10 @@ function Home() {
             </section>
 
             <section className='container mx-auto my-4'>
+            <h2 className='font-[300] text-3xl h-[60px] text-center'>Our Treatment Procedures Programme & Methods</h2>
                 <div className='lg:flex justify-between gap-[30px]'>
                     {treatmentData.map((post) => (
                         <div className='flex flex-col gap-4 relative lg:w-1/3 group'>
-                            <h2 className='font-[300] text-3xl h-[60px]'>{post.title}</h2>
                             <div className='w-full overflow-hidden'>
                                 <img className='h-[188px] group-hover:scale-105 duration-500 w-full' src={post.image} alt={post.alt} />
                             </div>

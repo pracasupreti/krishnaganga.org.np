@@ -8,6 +8,8 @@ import Duration from '../pages/Duration'
 import Banned from '../pages/Banned'
 import Treatment from '../pages/Treatment'
 import ThingsToProvide from '../pages/ThingsToProvide'
+import Donate from '../pages/Donate'
+import Volunteer from '../pages/Volunteer'
 
 function Header() {
   return (
@@ -15,14 +17,12 @@ function Header() {
       <section className='bg-[#26211d]'>
         <section className='container mx-auto flex justify-between p-2 items-center'>
           <div>
-            <a href='mailto:krishnaganga@gmail.com' className='flex gap-2 text-[#ccc] hover:text-[#eee]'><img className='p-1h-[20px] w-[20px]' src="src/assets/icon/envelope.svg" alt="envelope" />krishnaganga@gmail.com</a>
+            <a href='mailto:krishnaganga@gmail.com' className='flex gap-2 text-[#ccc] hover:text-[#eee]'><img className='bg-white h-[20px] w-[20p]' src="src/assets/icon/envelope.svg" alt="envelope" />krishnaganga@gmail.com</a>
           </div>
-          <ul className='flex gap-2'>
+          <ul className='flex gap-4'>
             <li><img className='w-[25px] h-[25px]' src="src\assets\icon\facebook.svg" alt="facebook" /></li>
-            <li><img className='w-[25px] h-[25px]' src="src\assets\icon\google-plus.svg" alt="google-plus" /></li>
             <li><img className='w-[25px] h-[25px]' src="src\assets\icon\twitter.svg" alt="twitter" /></li>
             <li><img className='w-[25px] h-[25px]' src="src\assets\icon\linkedin.svg" alt="linkedin" /></li>
-            <li><img className='w-[25px] h-[25px]' src="src\assets\icon\pinterest.svg" alt="pinterest" /></li>
           </ul>
         </section>
         <header className='bg-[#ecc731] p-1'>
@@ -68,8 +68,8 @@ function Header() {
             </ul>
 
             <div className='uppercase text-white'>
-              <a href="#" className='px-4 py-2 hover:bg-[#465e88] bg-[#ed1b24] me-2 ease-in duration-200 font-bold'>Donate us</a>
-              <a href="#" className='px-4 py-2 hover:bg-[#465e88] bg-[#ed1b24] ease-in duration-200'>Volunteer</a>
+              <Link to={'/donate'} className='px-4 py-2 hover:bg-[#465e88] bg-[#ed1b24] me-2 ease-in duration-200 font-bold'>Donate us</Link>
+              <Link to={'/volunteer'} className='px-4 py-2 hover:bg-[#465e88] bg-[#ed1b24] ease-in duration-200'>Volunteer</Link>
             </div>
           </section>
         </header>
@@ -83,6 +83,9 @@ function Header() {
         <Route path='/treatment' element={<Treatment />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/things-to-provide' element={<ThingsToProvide />} />
+        <Route path='/donate' element={<Donate/>} />
+        <Route path='/volunteer' element={<Volunteer/>} />
+
       </Routes>
     </>
   )

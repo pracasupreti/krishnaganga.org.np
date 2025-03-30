@@ -6,8 +6,8 @@ function Footer() {
       <footer className='bg-[#32302f] p-4'>
         <section className='container mx-auto lg:flex gap-10 text-[#8f8b89] text-sm'>
           <div className='flex-col gap-4 flex'>
-            <h2 className='text-[#ecc731] text-[28px] font-bold'><em>About Us</em></h2>
-            <p>Situated in the heart city of Biratnagar, HOPE TRUST, Krishna Ganga Drug & Alcohol Deaddiction & Rehabilitation Center</p>
+            <h2 className='text-[#ecc731] text-[30px] font-bold'><em>About Us</em></h2>
+            <p className='text-justify'>Situated in the heart city of Biratnagar, HOPE TRUST, Krishna Ganga Drug & Alcohol Deaddiction & Rehabilitation Center</p>
             <div className='flex flex-col gap-2'>
               <p className='flex gap-2'><img className='bg-[#8f8b89] rounded h-[20px] w-[20px]' src="src/assets/icon/home.svg" alt="home" />Janapath Tole, Biratnagar, Nepal</p>
               <a href='tel:+977 21471609' className='flex gap-2 hover:text-[#ccc]'><img className='bg-[#8f8b89] rounded h-[20px] w-[20px]' src="src/assets/icon/phone.svg" alt="phone" />+977 21 471609</a>
@@ -15,7 +15,7 @@ function Footer() {
             </div>
           </div>
           <div>
-            <h3 className='text-white text-[24px] mt-3 mb-5'>Useful Links</h3>
+            <h3 className='text-white text-[30px] mb-5'>Useful Links</h3>
             <div className='flex flex-col gap-2 lg:w-[220px]'>
             <a className='hover:text-[#ccc]' href="https://neurohospital.com.np/" target='_blank'>Neuro Hospital,Biratnagar</a>
             <a className='hover:text-[#ccc]' href="https://www.swc.org.np/" target='_blank'>Social Welfare Council</a>
@@ -31,7 +31,7 @@ function Footer() {
       <section className='bg-[#2a2928] py-5 px-3'>
         <div className='lg:flex justify-between container mx-auto text-[#cccc] text-[15px]'>
           <p>© Copyright 2025, All Rights Reserved by Krishna Ganga HOPE TRUST.</p>
-          <p>Technology Partner :<a href='https://sriyog.com/consulting' className='text-[#3a7ee4] hover:text-blue-400'> SRIYOG Consulting, Kathmandu</a></p>
+          <p>Technology Partner :<a href='https://sriyog.com/consulting' className='hover:text-[#ccc]'> SRIYOG Consulting, Kathmandu</a></p>
           </div>
         </section>
     </>
