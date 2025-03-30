@@ -11,6 +11,90 @@ import 'swiper/css/pagination';
 
 
 function Home() {
+    let post = [
+        {
+            title: "Standard Medical Test",
+            imgSrc: "src/assets/crousel/Standard-Medical-Test.jpg",
+            alt: "Standard Medical Test",
+            description: "Standard medical tests are done to ensure the candidate is mentally and physically fit."
+        },
+        {
+            title: "Psychiatrist Assessments",
+            imgSrc: "src/assets/crousel/Phychiatrist-Assessments.jpg",
+            alt: "Psychiatrist Assessments",
+            description: "Psychiatrist assessments are conducted to gather information about the candidate."
+        },
+        {
+            title: "Psychological Evaluation",
+            imgSrc: "src/assets/crousel/Phychological-Evaluation.jpg",
+            alt: "Psychological Evaluation",
+            description: "Psychological evaluations are done periodically to ensure the candidate is on the right path."
+        },
+        {
+            title: "AA / NA 12 Step Program",
+            imgSrc: "src/assets/crousel/AA--NA-12-Step-Program.jpg",
+            alt: "AA / NA 12 Step Program",
+            description: "AA/NA 12-step programs help candidates overcome addiction."
+        },
+        {
+            title: "REBT (A form of Psychotherapy)",
+            imgSrc: "src/assets/crousel/REBT.jpg",
+            alt: "REBT (A form of Psychotherapy)",
+            description: "REBT, a form of psychotherapy, helps candidates overcome addiction."
+        },
+        {
+            title: "Management of Emotions & Feelings",
+            imgSrc: "src/assets/crousel/management-of-emotions-and-.jpg",
+            alt: "Management of Emotions & Feelings",
+            description: "Candidates are taught how to manage their emotions and feelings effectively."
+        },
+        {
+            title: "Family Counselling",
+            imgSrc: "src/assets/crousel/familycounselling-banner.jpg",
+            alt: "Family Counselling",
+            description: "Counseling helps individuals and families understand and support each other."
+        },
+        {
+            title: "Behaviour Therapy",
+            imgSrc: "src/assets/crousel/Behaviour-Therapy.jpg",
+            alt: "Behaviour Therapy",
+            description: "Behavior therapy helps prevent relapse and promotes positive behavior changes."
+        },
+        {
+            title: "Relapse Prevention Program",
+            imgSrc: "src/assets/crousel/Relapse-Prevention-Program.jpg",
+            alt: "Relapse Prevention Program",
+            description: "Relapse prevention programs help reduce the risk of returning to self-destructive behavior."
+        }
+    ]
+
+    let treatmentData = [
+        {
+            title: "Our Treatment Procedures & Methods",
+            image: "src/assets/treatment/personal.jpg",
+            alt: "Personal Treatment",
+            heading: "Tailored to personal history, family history, and circumstances",
+            description:
+                "Our program focuses on physical and mental recovery, self-evaluation, self-esteem, and self-confidence to support clients in abstaining from addiction and leading a happy life. We adhere strictly to a key essence of family support throughout the program."
+        },
+        {
+            title: "Programme",
+            image: "src/assets/treatment/behaviour-therapy-footer.jpg",
+            alt: "Behaviour Therapy",
+            heading: "Behaviour Therapy",
+            description:
+                "Behaviour Therapy helps individuals understand how their behavior influences their environment, providing specific techniques to modify and improve their responses."
+        },
+        {
+            title: "",
+            image: "src/assets/treatment/Relapse.jpg",
+            alt: "Relapse Prevention Program",
+            heading: "Relapse Prevention Program",
+            description:
+                "Relapse prevention programs help reduce the risk of returning to self-destructive behavior, focusing on long-term strategies to maintain recovery."
+        }
+    ];
+
     return (
         <>
             <Carousel />
@@ -29,70 +113,17 @@ function Home() {
                         pagination={{ clickable: true }}
                         autoplay={{ delay: 5000, disableOnInteraction: false }} // Auto play every 5 sec
                     >
-                        <SwiperSlide className='mb-6'>
-                            <div className='flex flex-col gap-4 w-[360px]'>
-                                <p className='text-center text-[17px]'>Standard Medical Test</p>
-                                <img className='w-full h-[245px] mx-auto' src="src/assets/crousel/Standard-Medical-Test.jpg" alt="Standard Medical Test" />
-                                <p className='text-[#333]'>Standard medical tests are done to ensure the candidate is mentally and physically fit.</p>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide className='mb-6'>
-                            <div className='flex flex-col gap-4 w-[360px]'>
-                                <p className='text-center text-[17px]'>Phychiatrist Assessments</p>
-                                <img className='w-full h-[245px] mx-auto' src="src/assets/crousel/Phychiatrist-Assessments.jpg" alt="Phychiatrist Assessments" />
-                                <p className='text-[#333]'>Phychiatrist assessments is done to gather the information about the candidate.</p>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide className='mb-6'>
-                            <div className='flex flex-col gap-4 w-[360px]'>
-                                <p className='text-center text-[17px]'>Phychological Evaluation
-                                </p>
-                                <img className='w-full h-[245px] mx-auto' src="src/assets/crousel/Phychological-Evaluation.jpg" alt="Phychological Evaluation" />
-                                <p className='text-[#333]'>Phychological Evaluation is done under timely basis to ensure the cadidate is in right direction.</p>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide className='mb-6'>
-                            <div className='flex flex-col gap-4 w-[360px]'>
-                                <p className='text-center text-[17px]'>AA / NA 12 Step Program</p>
-                                <img className='w-full h-[245px] mx-auto' src="src/assets/crousel/AA--NA-12-Step-Program.jpg" alt="AA / NA 12 Step Program" />
-                                <p className='text-[#333]'>AA/NA 12 step programme is the one of the programme to help the cadidate.</p>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide className='mb-6'>
-                            <div className='flex flex-col gap-4 w-[360px]'>
-                                <p className='text-center text-[17px]'>REBT ( A form of Psychotherapy )</p>
-                                <img className='w-full h-[245px] mx-auto' src="src/assets/crousel/REBT.jpg" alt="REBT ( A form of Psychotherapy )" />
-                                <p className='text-[#333]'>In here we use different form of Psychotherapy REBT helps the candidate to overcome the addiction.</p>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide className='mb-6'>
-                            <div className='flex flex-col gap-4 w-[360px]'>
-                                <p className='text-center text-[17px]'>Management of Emotions & Feelings</p>
-                                <img className='w-full h-[245px] mx-auto' src="src/assets/crousel/management-of-emotions-and-.jpg" alt="Standard Medical Test" />
-                                <p className='text-[#333]'>Here we also teach the candidate to manage the emotions and feelings.</p>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide className='mb-6'>
-                            <div className='flex flex-col gap-4'>
-                                <p className='text-center text-[17px]'>Family Counselling</p>
-                                <img className='w-full lg:h-[245px] mx-auto' src="src/assets/crousel/familycounselling-banner.jpg" alt="Family Counselling" />
-                                <p className='text-[#333] text-wrap'>Counselling is the best possible way to understand and to make the person understand.</p>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide className='mb-6'>
-                            <div className='flex flex-col gap-4'>
-                                <p className='text-center text-[17px]'>Behaviour Therapy</p>
-                                <img className='w-full lg:h-[245px] mx-auto' src="src/assets/crousel/Behaviour-Therapy.jpg" alt="Behaviour Therapy" />
-                                <p className='text-[#333] text-wrap'>Relapse prevention programs can help reduce the risk of a return to self-destructive behavior.</p>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide className='mb-6 w-full'>
-                            <div className='flex flex-col gap-4'>
-                                <p className='text-center text-[17px]'>Relapse Prevention Program</p>
-                                <img className='w-full lg:h-[245px] mx-auto' src="src/assets/crousel/Relapse-Prevention-Program.jpg" alt="Relapse Prevention Program" />
-                                <p className='text-[#333] text-wrap'>Relapse prevention programs can help reduce the risk of a return to self-destructive behavior.</p>
-                            </div>
-                        </SwiperSlide>
+                        {post.map((a) => (
+                            <SwiperSlide className='mb-6 w-full group'>
+                                <div className='flex flex-col gap-4'>
+                                    <p className='text-center text-[17px]'>{a.title}</p>
+                                    <div className='w-full overflow-hidden'>
+                                        <img className='lg:h-[245px] mx-auto group-hover:scale-105 duration-500' src={a.imgSrc} alt={a.alt} />
+                                    </div>
+                                    <p className='text-[#333] text-wrap'>Relapse prevention programs can help reduce the risk of a return to self-destructive behavior.</p>
+                                </div>
+                            </SwiperSlide>
+                        ))}
                     </Swiper>
                 </div>
             </section>
@@ -104,7 +135,7 @@ function Home() {
                 <div className='lg:flex justify-between gap-20'>
                     <div className='flex flex-col gap-8'>
                         <div className='flex gap-4'>
-                            <img className='bg-[#ecc731] p-2 h-[60px] w-[60px]' src="src\assets\icon\megaphone.svg" alt="megaphone" />
+                            <img className='bg-[#ecc731] p-2 h-[60px] w-[60px]' src="src/assets/icon/megaphone.svg" alt="megaphone" />
                             <div>
                                 <h2 className='text-[18px] font-bold'>Yoga & Meditation</h2>
                                 <p className='text-[#838282]'>Yoga Meditation is the art and science of systematically observing, accepting, understanding, and training each of the levels of our being</p>
@@ -112,7 +143,7 @@ function Home() {
                         </div>
 
                         <div className='flex gap-4'>
-                            <img className='bg-[#ecc731] p-2 h-[60px] w-[60px]' src="src\assets\icon\user.svg" alt="user" />
+                            <img className='bg-[#ecc731] p-2 h-[60px] w-[60px]' src="src/assets/icon/user.svg" alt="user" />
                             <div>
                                 <h2 className='text-[18px] font-bold'>Recreational Art / Craft / Music Therapy</h2>
                                 <p className='text-[#838282]'>We understand that illness and medical procedures have the potential to cause anxiety and fear in person. To ease these feelings and help your family.</p>
@@ -120,7 +151,7 @@ function Home() {
                         </div>
 
                         <div className='flex gap-4'>
-                            <img className='bg-[#ecc731] p-2 h-[60px] w-[60px]' src="src\assets\icon\heart.svg" alt="heart" />
+                            <img className='bg-[#ecc731] p-2 h-[60px] w-[60px]' src="src/assets/icon/heart.svg" alt="heart" />
                             <div>
                                 <h2 className='text-[18px] font-bold'>Well Equipped Library</h2>
                                 <p className='text-[#838282]'>We have well equipped library which consists of various books on different sectors and subjects.</p>
@@ -135,26 +166,16 @@ function Home() {
 
             <section className='container mx-auto my-4'>
                 <div className='lg:flex justify-between gap-[30px]'>
-                    <div className='flex flex-col gap-4 relative lg:w-1/3'>
-                        <h2 className='font-[300] text-3xl h-[60px]'>Our Treatment Procedures & Methods</h2>
-                        <img className='h-[188px] w-full' src="src\assets\treatment\personal.jpg" alt="personal" />
-                        <h2 className='font-bold text-[24px] pe-3 h-[60px]'>Tailord with reference to personal history, family history, circumtances</h2>
-                        <p className='text-[#838282] text-justify'>Our program deals with physical recovery, mental recovery, self evalution, self esteem, self confidence to support the client to abstain from addiction and to lead a happy life. Key essence in family program which we adhere to very strictly.</p>
-                    </div>
-
-                    <div className='flex flex-col gap-4 relative lg:w-1/3'>
-                        <h2 className='font-[300] text-3xl h-[60px]'>Programme</h2>
-                        <img className='h-[188px] w-full' src="src\assets\treatment\behaviour-therapy-footer.jpg" alt="Behaviour Therapy" />
-                        <h2 className='font-bold text-[24px] pe-3 h-[60px]'>Behaviour Therapy</h2>
-                        <p className='text-[#838282] text-justify'>Behaviour Therapy,here helps the person to look more specific ,and teaches how the behaviour influences the environment.</p>
-                    </div>
-
-                    <div className='flex flex-col gap-4 relative lg:w-1/3'>
-                        <h2 className='font-[300] text-3xl h-[60px]'>&nbsp;</h2>
-                        <img className='h-[188px] w-full' src="src\assets\treatment\Relapse.jpg" alt="Relapse Prevention Program" />
-                        <h2 className='font-bold text-[24px] pe-3 h-[60px]'>Relapse Prevention Program</h2>
-                        <p className='text-[#838282] text-justify'>Relapse prevention programs can help reduce the risk of a return to self-destructive behavior.</p>
-                    </div>
+                    {treatmentData.map((post) => (
+                        <div className='flex flex-col gap-4 relative lg:w-1/3 group'>
+                            <h2 className='font-[300] text-3xl h-[60px]'>{post.title}</h2>
+                            <div className='w-full overflow-hidden'>
+                                <img className='h-[188px] group-hover:scale-105 duration-500 w-full' src={post.image} alt={post.alt} />
+                            </div>
+                            <h2 className='font-bold text-[24px] pe-3 h-[60px]'>{post.heading}</h2>
+                            <p className='text-[#838282] text-justify'>{post.description}</p>
+                        </div>
+                    ))}
                 </div>
             </section>
         </>
