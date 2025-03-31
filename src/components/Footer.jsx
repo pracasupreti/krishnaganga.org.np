@@ -31,7 +31,7 @@ function Footer() {
       <section className='bg-[#2a2928] py-5 px-3'>
         <div className='lg:flex justify-between container mx-auto text-[#cccc] text-[15px]'>
           <p>© Copyright 2025, All Rights Reserved by Krishna Ganga HOPE TRUST.</p>
-          <p>Technology Partner :<a href='https://sriyog.com/consulting' className='hover:text-[#ccc]'> SRIYOG Consulting, Kathmandu</a></p>
+          <p>Technology Partner :<a href='https://sriyog.com/consulting' className='hover:text-[#ccc] duration-500'> SRIYOG Consulting, Kathmandu</a></p>
           </div>
         </section>
     </>

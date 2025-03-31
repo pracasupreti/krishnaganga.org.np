@@ -52,13 +52,13 @@ function Banned() {
     },
     {
       id: 1,
-      item: "Valuable like gold or any other precious metal or stones, Ring, Jewelry.",
+      item: "Valuables (gold, jewelry, precious metals/stones).",
       src: "src/assets/banned-items/jewelry.svg",
       alt: "jewelry"
     },
     {
       id: 1,
-      item: "Medication without prescription-(even prescribed medication has to be accepted by our team of doctors for the reason client safety.",
+      item: "Medication (without approval).",
       src: "src/assets/banned-items/capsule.svg",
       alt: "capsule"
     },
@@ -69,10 +69,10 @@ function Banned() {
                 <h2 className='text-center text-3xl font-bold mb-8'>
                     <span className='pb-1' style={{ borderBottom: "4px solid transparent", borderImage: "linear-gradient(to right, red, yellow, blue) 1" }}>Banned Items</span>
                 </h2>
-                <div className='grid grid-cols-3 gap-6'>
+                <div className='grid lg:grid-cols-3 md:grid-cols-2 gap-2 lg:w-[900px] gap-y-6 lg:mx-auto'>
                   {banned.map((a)=>(
-                    <div>
-                    <img className='h-[100px] w-[100px] mx-auto' src={a.src} alt={a.alt} />
+                    <div className='shadow-2xl w-[200px] group mx-auto rounded-xl p-2'>
+                    <img className='h-[100px] w-[100px] mx-auto overflow-hidden duration-300 group-hover:scale-105' src={a.src} alt={a.alt} />
                     <h2 className='text-[#333] text-center'>{a.item}</h2>
                   </div>
                   ))}
