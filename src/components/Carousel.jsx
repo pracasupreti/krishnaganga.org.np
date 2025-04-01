@@ -10,7 +10,7 @@ import 'swiper/css/scrollbar';
 
 function Carousel() {
   return (
-    <section className="mx-auto w-[1340px]">
+    <section className="mx-auto lg:w-full">
       <Swiper
         modules={[Navigation, Pagination, A11y, Autoplay]}
         spaceBetween={50}

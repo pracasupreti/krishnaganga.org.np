@@ -100,7 +100,7 @@ function Home() {
                     <span className='pb-1' style={{ borderBottom: "4px solid transparent", borderImage: "linear-gradient(to right, red, yellow, blue) 1" }}>Dedicated team of counsellor, psychologist, psychiatrist & other team of Doctors</span>
                 </h2>
 
-                <div className='mx-auto lg:w-[1100px] mt-[60px]'>
+                <div className='mx-auto lg:w-full mt-[60px]'>
                     <Swiper
                         // install Swiper modules
                         modules={[Pagination, A11y, Autoplay]}
@@ -113,7 +113,7 @@ function Home() {
                         {post.map((a) => (
                             <SwiperSlide className='mb-[40px] w-full group'>
                                 <div className='flex flex-col gap-4'>
-                                    <p className='text-center text-[17px]'>{a.title}</p>
+                                    <p className='text-center text-[17px] h-[60px] lg:h-[20px]'>{a.title}</p>
                                     <div className='w-full overflow-hidden rounded-lg'>
                                         <img className='lg:h-[245px] mx-auto group-hover:scale-105 duration-500' src={a.imgSrc} alt={a.alt} />
                                     </div>
@@ -170,8 +170,8 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <iframe width="555" height="312" src="https://www.youtube.com/embed/qrQVdhSE-Vc" title="Anti-Drug Video: Popular" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div className='lg:w-[1050px] lg:h-[312px] mt-8 lg:mt-0 h-[312px]'>
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/qrQVdhSE-Vc" title="Anti-Drug Video: Popular" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                 </div>
             </section>
@@ -180,7 +180,7 @@ function Home() {
             <h2 className='font-[300] text-3xl h-[60px] text-center'>Our Treatment Procedures Programme & Methods</h2>
                 <div className='lg:flex justify-between gap-[30px]'>
                     {treatmentData.map((post) => (
-                        <div className='flex flex-col gap-4 relative lg:w-1/3 group'>
+                        <div className='flex flex-col gap-4 relative lg:w-1/3 group mt-8 lg:mt-0'>
                             <div className='w-full overflow-hidden'>
                                 <img className='h-[188px] group-hover:scale-105 duration-500 w-full' src={post.image} alt={post.alt} />
                             </div>
