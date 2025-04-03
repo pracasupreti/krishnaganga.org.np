@@ -21,10 +21,7 @@ function Header() {
       <section className='bg-[#26211d]'>
         <section className='container mx-auto flex justify-between p-2 items-center'>
           <div>
-            <a href='mailto:krishnaganga@gmail.com' className='flex gap-2 text-[#ccc] hover:text-[#eee]'>
-              <img className='h-[20px] w-[20px] invert pt-[4px]' src="src/assets/icon/envelope.svg" alt="envelope" />
-              krishnaganga@gmail.com
-            </a>
+          <a href='tel:+977 21471609' className='flex gap-2 text-[#ccc]'><img className='h-[20px] w-[20px] invert pt-[5px]' src="src/assets/icon/phone.svg" alt="phone" />+977 21 471609</a>
           </div>
           <ul className='flex gap-4'>
             <li><a href="#"><img className='w-[25px] h-[25px]' src="src/assets/icon/facebook.svg" alt="facebook" /></a></li>
@@ -105,6 +102,7 @@ function Header() {
           <li><Link to={'/'} className="py-2 hover:text-[#ed1b24]">Home</Link></li>
           <li><Link to={'/about'} className="py-2 hover:text-[#ed1b24]">About</Link></li>
           <li><Link to={'/treatment'} className="py-2 hover:text-[#ed1b24]">Treatment</Link></li>
+          <li><Link to={'/things-to-provide'} className="py-2 hover:text-[#ed1b24] ms-4">Things To Provide</Link></li>
           <li><Link to={'/fee'} className="py-2 hover:text-[#ed1b24]">Fee</Link></li>
           <li><Link to={'/banned-items'} className="py-2 hover:text-[#ed1b24]">Banned Items</Link></li>
           <li><Link to={'/duration'} className="py-2 hover:text-[#ed1b24]">Duration</Link></li>
