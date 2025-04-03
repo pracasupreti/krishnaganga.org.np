@@ -115,7 +115,7 @@ function Home() {
                                 <div className='flex flex-col gap-4'>
                                     <p className='text-center text-[17px] h-[60px] lg:h-[20px]'>{a.title}</p>
                                     <div className='w-full overflow-hidden rounded-lg'>
-                                        <img className='lg:h-[245px] mx-auto group-hover:scale-105 duration-500' src={a.imgSrc} alt={a.alt} />
+                                        <img className='lg:h-[245px] mx-auto group-hover:scale-105 duration-500 w-full' src={a.imgSrc} alt={a.alt} />
                                     </div>
                                     <p className='text-[#333] text-wrap'>Relapse prevention programs can help reduce the risk of a return to self-destructive behavior.</p>
                                 </div>
@@ -181,7 +181,7 @@ function Home() {
                 <div className='lg:flex justify-between gap-[30px]'>
                     {treatmentData.map((post) => (
                         <div className='flex flex-col gap-4 relative lg:w-1/3 group mt-8 lg:mt-0'>
-                            <div className='w-full overflow-hidden'>
+                            <div className='w-full overflow-hidden rounded-lg'>
                                 <img className='h-[188px] group-hover:scale-105 duration-500 w-full' src={post.image} alt={post.alt} />
                             </div>
                             <h2 className='font-bold text-[24px] pe-3 h-[60px]'>{post.heading}</h2>

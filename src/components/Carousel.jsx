@@ -18,7 +18,7 @@ function Carousel() {
         navigation
         loop={true}
         pagination={{ clickable: true }}
-        autoplay={{ delay: 10000, disableOnInteraction: false }} // Auto play every 10 sec
+        autoplay={{ delay: 10000, disableOnInteraction: false }} 
       >
         <SwiperSlide>
           <img src="src/assets/crousel/slide-banner-01.jpg" alt="banner-1" />
