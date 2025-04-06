@@ -4,7 +4,7 @@ function Duration() {
   return (
     <section className="container mx-auto my-12 px-4">
       <div className="flex flex-col gap-8">
-        <h2 className="text-center text-3xl md:text-4xl font-bold">
+        <h2 className="text-center text-3xl font-bold">
           <span className="pb-1" style={{ borderBottom: '4px solid transparent', borderImage: 'linear-gradient(to right, red, yellow, blue) 1',}}>
             Treatment Duration & Process
           </span>

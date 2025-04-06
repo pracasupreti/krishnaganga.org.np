@@ -9,8 +9,27 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 function Carousel() {
+  let slider = [
+    {
+      src: "src/assets/carousel/slider-1.jpg",
+      alt: "slider-1"
+    },
+    {
+      src: "src/assets/carousel/slider-2.jpg",
+      alt: "slider-2"
+    },
+    {
+      src: "src/assets/carousel/slider-3.jpg",
+      alt: "slider-3"
+    },
+    {
+      src: "src/assets/carousel/slider-4.jpg",
+      alt: "slider-4"
+    }
+  ];
+  
   return (
-    <section className="mx-auto lg:w-full">
+    <section className="mx-auto lg:w-full max-w-[1400px]">
       <Swiper
         modules={[Navigation, Pagination, A11y, Autoplay]}
         spaceBetween={50}
@@ -20,15 +39,11 @@ function Carousel() {
         pagination={{ clickable: true }}
         autoplay={{ delay: 10000, disableOnInteraction: false }} 
       >
-        <SwiperSlide>
-          <img src="src/assets/crousel/slide-banner-01.jpg" alt="banner-1" />
+        {slider.map((a)=>(
+          <SwiperSlide>
+          <img className='h-[600px] w-full' src={a.src} alt={a.alt} />
         </SwiperSlide>
-        <SwiperSlide>
-          <img src="src/assets/crousel/slide-banner-02.jpg" alt="banner-2" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="src/assets/crousel/slide-banner-03.jpg" alt="banner-3" />
-        </SwiperSlide>
+        ))}
       </Swiper>
       <style jsx global>
   {`

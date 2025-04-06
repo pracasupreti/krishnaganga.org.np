@@ -1,23 +1,78 @@
-import React from 'react'
+import React from 'react';
 
 function Treatment() {
   return (
     <>
-      <section className='container mx-auto my-8'>
-        <div className='flex flex-col gap-8'>
-          <h2 className='text-center text-3xl font-bold'>
-            <span className='pb-1' style={{ borderBottom: "4px solid transparent", borderImage: "linear-gradient(to right, red, yellow, blue) 1" }}>Our Treatment</span>
+      <section className="container mx-auto my-12 px-4">
+        <div className="flex flex-col gap-10">
+          {/* Heading */}
+          <h2 className="text-center text-3xl font-bold">
+            <span
+              className="pb-1"
+              style={{
+                borderBottom: '4px solid transparent',
+                borderImage: 'linear-gradient(to right, red, yellow, blue) 1',
+              }}
+            >
+              Our Treatment
+            </span>
           </h2>
 
-          <p className='text-[#888787] text-justify'>We take utmost care of sensitive issues of the client to respect their anonymity and personal dignity.</p>
+          {/* Section 1 */}
+          <div className="flex flex-col gap-4">
+            <h3 className="text-xl font-semibold text-[#444]">
+              Respecting Privacy & Dignity
+            </h3>
+            <p className="text-[#888787] text-justify">
+              We take utmost care of sensitive issues of the client to respect
+              their anonymity and personal dignity.
+            </p>
+          </div>
 
-          <p className='text-[#888787] text-justify'>We assure you that we will leave no stone unturned in helping a client recover from his addiction in our treatment program.After a Preliminary history taking he/she will be admitted for the acute detoxification program. Once he/she recovers from the withdrawals he/she will have to attend classes with others. And at the same time he/she will be following the 12 step program and REBT (a form of psychotherapy).Every Client will have an individualized program under supervision of the clinical psychologist and psychiatrist. This program including the acute withdrawal will be for a period of 4 months.</p>
+          {/* Section 2 */}
+          <div className="flex flex-col gap-4">
+            <h3 className="text-xl font-semibold text-[#444]">
+              Comprehensive Recovery Process
+            </h3>
+            <p className="text-[#888787] text-justify">
+              We assure you that we will leave no stone unturned in helping a
+              client recover from his addiction through our treatment program.
+              After a preliminary history taking, the client will be admitted
+              for an acute detoxification program. Once the withdrawal symptoms
+              subside, he/she will attend therapeutic classes alongside others.
+            </p>
+            <p className="text-[#888787] text-justify">
+              Simultaneously, the client will follow the 12-step recovery
+              program and engage in REBT (Rational Emotive Behavior Therapy), a
+              form of psychotherapy. Each client undergoes a personalized
+              treatment plan, supervised by a clinical psychologist and
+              psychiatrist. The entire program, including withdrawal management,
+              spans approximately 4 months.
+            </p>
+          </div>
 
-          <p className='text-[#888787] text-justify'>It is tailored with reference to personal history, family history, circumstances that lead to addiction, addictive substances (s), gender, physical health and other variables for effective approach. This is a renowned methodology of recovery with human values and principles.</p>
+          {/* Section 3 */}
+          <div className="flex flex-col gap-4">
+            <h3 className="text-xl font-semibold text-[#444]">
+              Individualized Care Plan
+            </h3>
+            <p className="text-[#888787] text-justify">
+              Each treatment plan is tailored with reference to personal
+              history, family background, the circumstances leading to
+              addiction, type of substances used, gender, physical health, and
+              other key variables. This personalized approach ensures a more
+              effective and human-centric recovery experience.
+            </p>
+            <p className="text-[#888787] text-justify">
+              This renowned methodology integrates therapeutic principles with
+              core human values, offering every client a chance to heal with
+              dignity and hope.
+            </p>
+          </div>
         </div>
       </section>
     </>
-  )
+  );
 }
 
-export default Treatment
+export default Treatment;

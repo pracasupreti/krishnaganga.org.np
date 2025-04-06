@@ -14,55 +14,55 @@ function Home() {
     let post = [
         {
             title: "Standard Medical Test",
-            imgSrc: "src/assets/crousel/Standard-Medical-Test.jpg",
+            imgSrc: "src/assets/carousel/Standard-Medical-Test.jpg",
             alt: "Standard Medical Test",
             description: "Standard medical tests are done to ensure the candidate is mentally and physically fit."
         },
         {
             title: "Psychiatrist Assessments",
-            imgSrc: "src/assets/crousel/Phychiatrist-Assessments.jpg",
+            imgSrc: "src/assets/carousel/Phychiatrist-Assessments.jpg",
             alt: "Psychiatrist Assessments",
             description: "Psychiatrist assessments are conducted to gather information about the candidate."
         },
         {
             title: "Psychological Evaluation",
-            imgSrc: "src/assets/crousel/Phychological-Evaluation.jpg",
+            imgSrc: "src/assets/carousel/Phychological-Evaluation.jpg",
             alt: "Psychological Evaluation",
             description: "Psychological evaluations are done periodically to ensure the candidate is on the right path."
         },
         {
             title: "AA / NA 12 Step Program",
-            imgSrc: "src/assets/crousel/AA--NA-12-Step-Program.jpg",
+            imgSrc: "src/assets/carousel/AA--NA-12-Step-Program.jpg",
             alt: "AA / NA 12 Step Program",
             description: "AA/NA 12-step programs help candidates overcome addiction."
         },
         {
             title: "REBT (A form of Psychotherapy)",
-            imgSrc: "src/assets/crousel/REBT.jpg",
+            imgSrc: "src/assets/carousel/REBT.jpg",
             alt: "REBT (A form of Psychotherapy)",
             description: "REBT, a form of psychotherapy, helps candidates overcome addiction."
         },
         {
             title: "Management of Emotions & Feelings",
-            imgSrc: "src/assets/crousel/management-of-emotions-and-.jpg",
+            imgSrc: "src/assets/carousel/management-of-emotions-and-.jpg",
             alt: "Management of Emotions & Feelings",
             description: "Candidates are taught how to manage their emotions and feelings effectively."
         },
         {
             title: "Family Counselling",
-            imgSrc: "src/assets/crousel/familycounselling-banner.jpg",
+            imgSrc: "src/assets/carousel/familycounselling-banner.jpg",
             alt: "Family Counselling",
             description: "Counseling helps individuals and families understand and support each other."
         },
         {
             title: "Behaviour Therapy",
-            imgSrc: "src/assets/crousel/Behaviour-Therapy.jpg",
+            imgSrc: "src/assets/carousel/Behaviour-Therapy.jpg",
             alt: "Behaviour Therapy",
             description: "Behavior therapy helps prevent relapse and promotes positive behavior changes."
         },
         {
             title: "Relapse Prevention Program",
-            imgSrc: "src/assets/crousel/Relapse-Prevention-Program.jpg",
+            imgSrc: "src/assets/carousel/Relapse-Prevention-Program.jpg",
             alt: "Relapse Prevention Program",
             description: "Relapse prevention programs help reduce the risk of returning to self-destructive behavior."
         }
@@ -93,7 +93,7 @@ function Home() {
     ];
 
     return (
-        <>
+        <>  
             <Carousel />
             <section className='container mx-auto my-[60px]'>
                 <h2 className='text-center text-3xl font-bold mb-6'>
@@ -184,7 +184,7 @@ function Home() {
                             <div className='w-full overflow-hidden rounded-lg'>
                                 <img className='h-[188px] group-hover:scale-105 duration-500 w-full' src={post.image} alt={post.alt} />
                             </div>
-                            <h2 className='font-bold text-[24px] pe-3 h-[60px]'>{post.heading}</h2>
+                            <h2 className='font-bold text-[22px] pe-3 h-[60px]'>{post.heading}</h2>
                             <p className='text-[#838282] text-justify'>{post.description}</p>
                         </div>
                     ))}

@@ -11,6 +11,7 @@ import ThingsToProvide from '../pages/ThingsToProvide';
 import Donate from '../pages/Donate';
 import Volunteer from '../pages/Volunteer';
 import ScrollToTop from './ScrollToTop';
+import Faq from '../pages/Faq';
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -79,9 +80,12 @@ function Header() {
               <li className="relative">
                 <Link className="relative pb-1 text-black transition-all before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-[#ed1b24] before:transition-all before:duration-300 hover:before:w-full" to={'/contact'}>contact</Link>
               </li>
+              <li className="relative">
+                <Link className="relative pb-1 text-black transition-all before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-[#ed1b24] before:transition-all before:duration-300 hover:before:w-full" to={'/faq'}>faq</Link>
+              </li>
             </ul>
 
-            <div className='uppercase text-white hidden lg:block'>
+            <div className='uppercase text-white hidden lg:flex flex-wrap ms-4 gap-y-2'>
               <Link to={'/donate'} className='px-4 py-2 hover:bg-[#465e88] bg-[#ed1b24] me-2 ease-in duration-200 font-bold'>Donate us</Link>
               <Link to={'/volunteer'} className='px-4 py-2 hover:bg-[#465e88] bg-[#ed1b24] ease-in duration-200'>Volunteer</Link>
             </div>
@@ -90,7 +94,7 @@ function Header() {
       
 
       {/* Mobile Menu (Right Slide-in) */}
-      <div className={`fixed top-0 right-0 w-[250px] h-full bg-[#ecc731] z-50 transform ${menuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out`}>
+      <div className={`fixed top-0 right-0 lg:hidden w-[250px] h-full bg-[#ecc731] z-50 transform ${menuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out`}>
         <div className="flex justify-between p-4">
           {/* Close button on the top right corner */}
           <button onClick={toggleMenu}>
@@ -108,6 +112,7 @@ function Header() {
           <li><Link to={'/banned-items'} className="py-2 hover:text-[#ed1b24]">Banned Items</Link></li>
           <li><Link to={'/duration'} className="py-2 hover:text-[#ed1b24]">Duration</Link></li>
           <li><Link to={'/contact'} className="py-2 hover:text-[#ed1b24]">Contact</Link></li>
+          <li><Link to={'/faq'} className="py-2 hover:text-[#ed1b24]">Faq</Link></li>
           <li><Link to={'/donate'} className='px-2 py-1 hover:bg-[#465e88] bg-[#ed1b24] me-2 ease-in duration-200 font-bold'>Donate us</Link></li>
           <li><Link to={'/volunteer'} className='px-2 py-1 hover:bg-[#465e88] bg-[#ed1b24] ease-in duration-200'>Volunteer</Link></li>
         </ul>
@@ -127,6 +132,7 @@ function Header() {
         <Route path='/things-to-provide' element={<ThingsToProvide />} />
         <Route path='/donate' element={<Donate />} />
         <Route path='/volunteer' element={<Volunteer />} />
+        <Route path="/faq" element={<Faq />} />
       </Routes>
     </>
   );
