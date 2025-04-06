@@ -20,7 +20,7 @@ function Treatment() {
 
           {/* Section 1 */}
           <div className="flex flex-col gap-4">
-            <h3 className="text-xl font-semibold text-[#444]">
+            <h3 className="text-xl font-bold text-[#444]">
               Respecting Privacy & Dignity
             </h3>
             <p className="text-[#888787] text-justify">
@@ -31,7 +31,7 @@ function Treatment() {
 
           {/* Section 2 */}
           <div className="flex flex-col gap-4">
-            <h3 className="text-xl font-semibold text-[#444]">
+            <h3 className="text-xl font-bold text-[#444]">
               Comprehensive Recovery Process
             </h3>
             <p className="text-[#888787] text-justify">
@@ -53,7 +53,7 @@ function Treatment() {
 
           {/* Section 3 */}
           <div className="flex flex-col gap-4">
-            <h3 className="text-xl font-semibold text-[#444]">
+            <h3 className="text-xl font-bold text-[#444]">
               Individualized Care Plan
             </h3>
             <p className="text-[#888787] text-justify">

@@ -12,22 +12,34 @@ function Carousel() {
   let slider = [
     {
       src: "src/assets/carousel/slider-1.jpg",
-      alt: "slider-1"
+      alt: "slider-1",
+      title: "Krishna Ganga Rehabilitation Center",
+      goal: "Healing Begins Here. Freedom Awaits.",
+      subtitle: "Empowering lives through care, compassion, and recovery."
     },
     {
       src: "src/assets/carousel/slider-2.jpg",
-      alt: "slider-2"
+      alt: "slider-2",
+      title: "Krishna Ganga Rehabilitation Center",
+      goal: "Healing Begins Here. Freedom Awaits.",
+      subtitle: "Empowering lives through care, compassion, and recovery."
     },
     {
       src: "src/assets/carousel/slider-3.jpg",
-      alt: "slider-3"
+      alt: "slider-3",
+      title: "Krishna Ganga Rehabilitation Center",
+      goal: "Healing Begins Here. Freedom Awaits.",
+      subtitle: "Empowering lives through care, compassion, and recovery."
     },
     {
       src: "src/assets/carousel/slider-4.jpg",
-      alt: "slider-4"
+      alt: "slider-4",
+      title: "Krishna Ganga Rehabilitation Center",
+      goal: "Healing Begins Here. Freedom Awaits.",
+      subtitle: "Empowering lives through care, compassion, and recovery."
     }
   ];
-  
+
   return (
     <section className="mx-auto lg:w-full max-w-[1400px]">
       <Swiper
@@ -37,16 +49,21 @@ function Carousel() {
         navigation
         loop={true}
         pagination={{ clickable: true }}
-        autoplay={{ delay: 10000, disableOnInteraction: false }} 
+        autoplay={{ delay: 10000, disableOnInteraction: false }}
       >
-        {slider.map((a)=>(
-          <SwiperSlide>
-          <img className='h-[600px] w-full' src={a.src} alt={a.alt} />
-        </SwiperSlide>
+        {slider.map((a) => (
+          <SwiperSlide className='relative'>
+            <img className='h-[600px] w-full object-cover' src={a.src} alt={a.alt} />
+            <div className='absolute top-[30%] left-[10%]'>
+              <h2 className='text-4xl font-bold text-red-600 '>{a.title}</h2>
+              <h4 className='text-2xl font-medium text-yellow-500'><em>{a.goal}</em></h4>
+              <h6 className='text-lg text-blue-800'>{a.subtitle}</h6>
+            </div>
+          </SwiperSlide>
         ))}
       </Swiper>
       <style jsx global>
-  {`
+        {`
     .swiper-button-next, .swiper-button-prev {
       color: #ed1b24;
       background-color: #ecc731;
@@ -69,7 +86,7 @@ function Carousel() {
       background-color: yellow !important;
     }
   `}
-</style>
+      </style>
 
 
 

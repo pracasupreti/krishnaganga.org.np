@@ -33,7 +33,7 @@ function Header() {
         </section>
         </section>
         <header className='bg-[#ecc731] p-1 sticky top-0 shadow-md z-50'>
-          <section className='container mx-auto flex items-center justify-between'>
+          <section className='container mx-auto flex items-center justify-between px-0'>
             <div>
               <Link to={'/'}>
                 <img src="src/assets/logo/krishna-ganga-logo.png" alt="Krishna Ganga Drugs & Alcohol Deaddiction & Rehabilitation Center" />
