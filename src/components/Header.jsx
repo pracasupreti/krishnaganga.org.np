@@ -10,6 +10,7 @@ import Treatment from '../pages/Treatment';
 import ThingsToProvide from '../pages/ThingsToProvide';
 import Donate from '../pages/Donate';
 import Volunteer from '../pages/Volunteer';
+import ScrollToTop from './ScrollToTop';
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -113,7 +114,7 @@ function Header() {
 
       </div>
 
-
+      <ScrollToTop/>
       {/* Routes */}
       <Routes>
         <Route path='/' element={<Home />} />
