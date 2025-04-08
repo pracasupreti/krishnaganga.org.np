@@ -31,7 +31,7 @@ function Faq() {
                     <span className="pb-1" style={{ borderBottom: "4px solid transparent", borderImage: "linear-gradient(to right, red, yellow, blue) 1" }}>FAQs</span>
                 </h2>
 
-                <div id="accordion-collapse" className='flex flex-col gap-4 text-left'>
+                <div id="accordion-collapse" className='flex flex-col gap-6 text-left'>
                     {faqData.map((a, index) => (
                         <div key={index} className="border border-gray-200 rounded-lg">
                             <h2>
@@ -42,7 +42,7 @@ function Faq() {
                                     aria-expanded={open === index ? "true" : "false"}
                                     aria-controls={`accordion-collapse-body-${index}`}
                                 >
-                                    <span>{a.question}</span>
+                                    <span className='text-left'>{a.question}</span>
                                     <svg
                                         className={`w-3 h-3 ${open === index ? 'rotate-180' : ''}`}
                                         aria-hidden="true"
@@ -65,7 +65,7 @@ function Faq() {
                                 <div>
                                     <hr className="border-t border-gray-200" />
                                     <div className="p-5">
-                                        <p className="text-[#ccc]">{a.answer}</p>
+                                        <p className="text-gray-400">{a.answer}</p>
                                     </div>
                                 </div>
                             )}
