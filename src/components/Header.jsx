@@ -34,10 +34,11 @@ function Header() {
         </section>
         <header className='bg-[#ecc731] p-1 sticky top-0 shadow-md z-50'>
           <section className='container mx-auto flex items-center justify-between px-0'>
-            <div>
+            <div className='flex items-center'>
               <Link to={'/'}>
                 <img src="src/assets/logo/krishna-ganga-logo.png" alt="Krishna Ganga Drugs & Alcohol Deaddiction & Rehabilitation Center" />
               </Link>
+              <h2 className='text-red-700 text-2xl font-bold'>Krishna Ganga</h2>
             </div>
 
             {/* Hamburger Menu */}
@@ -48,7 +49,7 @@ function Header() {
             </div>
 
             {/* Navigation Links (Desktop) */}
-            <ul className='lg:flex gap-7 capitalize text-black font-bold text-[18px] hidden'>
+            <ul className='lg:flex gap-6 capitalize text-black font-bold text-[16px] hidden'>
               <li className="relative">
                 <Link className="relative pb-1 text-black transition-all before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-[#ed1b24] before:transition-all before:duration-300 hover:before:w-full" to={'/'}>Home</Link>
               </li>
@@ -81,13 +82,13 @@ function Header() {
                 <Link className="relative pb-1 text-black transition-all before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-[#ed1b24] before:transition-all before:duration-300 hover:before:w-full" to={'/contact'}>contact</Link>
               </li>
               <li className="relative">
-                <Link className="relative pb-1 text-black transition-all before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-[#ed1b24] before:transition-all before:duration-300 hover:before:w-full" to={'/faq'}>faq</Link>
+                <Link className="relative pb-1 text-black transition-all before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-[#ed1b24] before:transition-all before:duration-300 hover:before:w-full" to={'/faq'}>FAQs</Link>
               </li>
             </ul>
 
-            <div className='uppercase text-white hidden lg:flex flex-wrap ms-4 gap-y-2'>
-              <Link to={'/donate'} className='px-4 py-2 hover:bg-[#465e88] bg-[#ed1b24] me-2 ease-in duration-200 font-bold'>Donate us</Link>
-              <Link to={'/volunteer'} className='px-4 py-2 hover:bg-[#465e88] bg-[#ed1b24] ease-in duration-200'>Volunteer</Link>
+            <div className='text-white hidden lg:flex flex-wrap ms-4 gap-y-2 capitalize'>
+              <Link to={'/donate'} className='px-4 py-2 hover:bg-[#465e88] bg-[#ed1b24] me-2 ease-in duration-200 font-bold rounded-lg'>Donate us</Link>
+              <Link to={'/volunteer'} className='px-4 py-2 hover:bg-[#465e88] bg-[#ed1b24] ease-in duration-200 font-bold rounded-lg'>Volunteer</Link>
             </div>
           </section>
         </header>

@@ -1,129 +1,80 @@
-import React from 'react'
-import {
-    Accordion,
-    AccordionHeader,
-    AccordionBody,
-} from "@material-tailwind/react";
+import React, { useState } from 'react';
 
 function Faq() {
-    const [open, setOpen] = React.useState(1);
+    const [open, setOpen] = useState(null);
 
-    const handleOpen = (value) => setOpen(open === value ? 0 : value);
+    const handleOpen = (index) => {
+        setOpen(open === index ? null : index);
+    };
+
+    // FAQ data
+    const faqData = [
+        { question: "1. What services does Krishna Ganga Rehabilitation Center provide?", answer: "We offer professional rehabilitation services including addiction recovery, mental health counseling, physical therapy, and holistic healing practices." },
+        { question: "2. Who can receive treatment at your center?", answer: "Our center is open to individuals struggling with substance abuse, mental health issues, or in need of physical rehabilitation, regardless of age or background." },
+        { question: "3. Is the treatment residential or outpatient?", answer: "We provide both residential (in-patient) and outpatient treatment programs based on the needs and preferences of the client." },
+        { question: "4. What is the duration of the rehabilitation program?", answer: "Program duration varies depending on the individual's condition. Typically, treatment can last from 30 to 90 days, with follow-up sessions for long-term recovery support." },
+        { question: "5. Is the treatment confidential?", answer: "Yes, we maintain complete confidentiality regarding all patient information and treatment details." },
+        { question: "6. Can family members visit the patient during treatment?", answer: "Yes, we encourage family involvement in the treatment process to support the patient's recovery." },
+        { question: "7. Are there any age restrictions for admission?", answer: "We do not have any specific age restrictions. Our center is open to people of all ages, depending on the nature of their treatment." },
+        { question: "8. Can patients continue their work or education while in treatment?", answer: "Patients may be able to continue their work or education, depending on their treatment plan. We offer flexible programs to accommodate their needs." },
+        { question: "9. How can I get in touch with the center for more information?", answer: "You can contact us through our website, or call our helpline number at +1-800-123-4567 for further assistance." },
+        { question: "10. Do you offer therapy for mental health conditions?", answer: "Yes, we offer therapy and counseling services for various mental health conditions, including anxiety, depression, PTSD, and more." },
+        { question: "11. Is your center accredited or licensed?", answer: "Yes, we are fully accredited and licensed by relevant regulatory bodies to provide high-quality rehabilitation services." },
+        { question: "12. Do you offer group therapy sessions?", answer: "Yes, we offer both individual and group therapy sessions to promote peer support and encourage shared healing experiences." },
+        { question: "13. What types of therapy do you provide?", answer: "We provide a variety of therapeutic services, including cognitive behavioral therapy (CBT), dialectical behavior therapy (DBT), art therapy, and family therapy." },
+    ];
+
     return (
-        <>
-            <section className='container mx-auto my-8 px-8'>
-                <div className='flex flex-col gap-8'>
-                    <h2 className='text-center text-3xl font-bold mb-8'>
-                        <span className='pb-1' style={{ borderBottom: "4px solid transparent", borderImage: "linear-gradient(to right, red, yellow, blue) 1" }}>Faq</span>
-                    </h2>
-                    <div className='text-left'>
-                    <Accordion open={open === 1}>
-                        <AccordionHeader className='text-[18px]' onClick={() => handleOpen(1)}>1. What services does Krishna Ganga Rehabilitation Center provide?</AccordionHeader>
-                        <AccordionBody>
-                        We offer professional rehabilitation services including addiction recovery, mental health counseling, physical therapy, and holistic healing practices.
-                        </AccordionBody>
-                    </Accordion>
-                    <Accordion open={open === 2}>
-                        <AccordionHeader className='text-[18px]' onClick={() => handleOpen(2)}>
-                        2. Who can receive treatment at your center?
-                        </AccordionHeader>
-                        <AccordionBody>
-                        Our center is open to individuals struggling with substance abuse, mental health issues, or in need of physical rehabilitation, regardless of age or background.
-                        </AccordionBody>
-                    </Accordion>
-                    <Accordion open={open === 3}>
-                        <AccordionHeader className='text-[18px]' onClick={() => handleOpen(3)}>
-                        3. Is the treatment residential or outpatient?
-                        </AccordionHeader>
-                        <AccordionBody>
-                        We provide both residential (in-patient) and outpatient treatment programs based on the needs and preferences of the client.
-                        </AccordionBody>
-                    </Accordion>
-                    <Accordion open={open === 4}>
-                        <AccordionHeader className='text-[18px]' onClick={() => handleOpen(4)}>
-                        4. What is the duration of the rehabilitation program?
-                        </AccordionHeader>
-                        <AccordionBody>
-                        Program duration varies depending on the individual's condition. Typically, treatment can last from 30 to 90 days, with follow-up sessions for long-term recovery support.
-                        </AccordionBody>
-                    </Accordion>
-                    <Accordion open={open === 5}>
-                        <AccordionHeader className='text-[18px]' onClick={() => handleOpen(5)}>
-                        5. Is the treatment confidential?
-                        </AccordionHeader>
-                        <AccordionBody>
-                        Yes, we maintain complete confidentiality regarding all patient information and treatment details.
-                        </AccordionBody>
-                    </Accordion>
-                    <Accordion open={open === 6}>
-                        <AccordionHeader className='text-[18px]' onClick={() => handleOpen(6)}>
-                        6. Do you offer detox services?
-                        </AccordionHeader>
-                        <AccordionBody>
-                        Yes, we provide medically supervised detoxification as the first step for individuals with substance dependency.
-                        </AccordionBody>
-                    </Accordion>
-                    <Accordion open={open === 7}>
-                        <AccordionHeader className='text-[18px]' onClick={() => handleOpen(7)}>
-                        7. Are family members allowed to visit or be involved in therapy?
-                        </AccordionHeader>
-                        <AccordionBody>
-                        Yes, family involvement is encouraged and we offer family counseling and visitation at appropriate times during the program.
-                        </AccordionBody>
-                    </Accordion>
-                    <Accordion open={open === 8}>
-                        <AccordionHeader className='text-[18px]' onClick={() => handleOpen(8)}>
-                        8. How much does the rehabilitation program cost?
-                        </AccordionHeader>
-                        <AccordionBody>
-                        The cost depends on the program type and duration. Please contact our administrative team for detailed pricing information and possible financial assistance.
-                        </AccordionBody>
-                    </Accordion>
-                    <Accordion open={open === 9}>
-                        <AccordionHeader className='text-[18px]' onClick={() => handleOpen(9)}>
-                        9. Do you accept insurance?
-                        </AccordionHeader>
-                        <AccordionBody>
-                        Yes, we work with several insurance providers. Kindly provide your insurance details so we can verify coverage.
-                        </AccordionBody>
-                    </Accordion>
-                    <Accordion open={open === 10}>
-                        <AccordionHeader className='text-[18px]' onClick={() => handleOpen(10)}>
-                        10. What should I bring if I am admitted to the center?
-                        </AccordionHeader>
-                        <AccordionBody>
-                        We will provide a checklist, but generally, you should bring comfortable clothes, personal hygiene items, prescribed medications, and important identification documents.
-                        </AccordionBody>
-                    </Accordion>
-                    <Accordion open={open === 11}>
-                        <AccordionHeader className='text-[18px]' onClick={() => handleOpen(11)}>
-                        11. How can I refer someone to the center?
-                        </AccordionHeader>
-                        <AccordionBody>
-                        You can contact our office directly or fill out the referral form on our website. Our staff will get in touch for an assessment.
-                        </AccordionBody>
-                    </Accordion>
-                    <Accordion open={open === 12}>
-                        <AccordionHeader className='text-[18px]' onClick={() => handleOpen(12)}>
-                        12. What kind of therapies do you use?
-                        </AccordionHeader>
-                        <AccordionBody>
-                        We use evidence-based therapies like Cognitive Behavioral Therapy (CBT), Dialectical Behavior Therapy (DBT), group therapy, individual counseling, yoga, meditation, and more.
-                        </AccordionBody>
-                    </Accordion>
-                    <Accordion open={open === 13}>
-                        <AccordionHeader className='text-[18px]' onClick={() => handleOpen(13)}>
-                        13. Is aftercare support available?
-                        </AccordionHeader>
-                        <AccordionBody>
-                        Yes, we offer aftercare programs including support groups, counseling, and relapse prevention strategies to help maintain long-term recovery.
-                        </AccordionBody>
-                    </Accordion>
-                    </div>
+        <section className="container mx-auto my-8 px-8">
+            <div className="flex flex-col gap-8">
+                <h2 className="text-center text-3xl font-bold mb-8">
+                    <span className="pb-1" style={{ borderBottom: "4px solid transparent", borderImage: "linear-gradient(to right, red, yellow, blue) 1" }}>FAQs</span>
+                </h2>
+
+                <div id="accordion-collapse" className='flex flex-col gap-4 text-left'>
+                    {faqData.map((a, index) => (
+                        <div key={index} className="border border-gray-200 rounded-lg">
+                            <h2>
+                                <button
+                                    type="button"
+                                    onClick={() => handleOpen(index)}
+                                    className="flex items-center justify-between w-full p-5 font-medium text-gray-500"
+                                    aria-expanded={open === index ? "true" : "false"}
+                                    aria-controls={`accordion-collapse-body-${index}`}
+                                >
+                                    <span>{a.question}</span>
+                                    <svg
+                                        className={`w-3 h-3 ${open === index ? 'rotate-180' : ''}`}
+                                        aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 10 6"
+                                    >
+                                        <path
+                                            stroke="currentColor"
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth={2}
+                                            d="M9 5 5 1 1 5"
+                                        />
+                                    </svg>
+                                </button>
+                            </h2>
+
+                            {open === index && (
+                                <div>
+                                    <hr className="border-t border-gray-200" />
+                                    <div className="p-5">
+                                        <p className="text-[#ccc]">{a.answer}</p>
+                                    </div>
+                                </div>
+                            )}
+                        </div>
+                    ))}
                 </div>
-            </section >
-        </>
-    )
+            </div>
+        </section>
+    );
 }
 
-export default Faq
+export default Faq;

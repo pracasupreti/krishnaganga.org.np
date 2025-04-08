@@ -15,29 +15,29 @@ function Contact() {
             <div className=' flex flex-col gap-4 lg:mt-0 mt-6'>
               <h2 className='font-[300] w-full text-2xl'>Get In Touch</h2>
               <div className='flex gap-2'>
-                <div>
+                {/* <div className='flex flex-col gap-2'>
                   <p className='flex gap-1'>Address</p>
                   <p className='flex gap-1'>E-mail</p>
                   <p className='flex gap-1'>Tel</p>
                   <p className='flex gap-1'>Fax</p>
+                </div> */}
+                {/* <div>
+                  <p>:</p>
+                  <p>:</p>
+                  <p>:</p>
+                  <p>:</p>
+                </div> */}
+                <div className='flex flex-col gap-[18px] pt-[3px]'>
+                  
+                  
+                  
+                  
                 </div>
-                <div>
-                  <p>:</p>
-                  <p>:</p>
-                  <p>:</p>
-                  <p>:</p>
-                </div>
-                <div className='flex flex-col gap-[10px] pt-[3px]'>
-                  <img src="src/assets/icon/geo.svg" alt="geo-alt" />
-                  <img src="src/assets/icon/envelope.svg" alt="envelope" />
-                  <img src="src/assets/icon/phone.svg" alt="phone" />
-                  <img src="src/assets/icon/fax.svg" alt="fax" />
-                </div>
-                <div>
-                  <p>Janapath Tole,Biratnagar,Nepal</p>
-                  <p>krishnaganga@gmail.com</p>
-                  <p>+977 021-471609</p>
-                  <p>021- 471609</p>
+                <div className='flex flex-col gap-[10px] text-[22px]'>
+                  <p className='flex gap-2 items-center'><img src="src/assets/icon/geo.svg" className='w-[25px]' alt="geo-alt" /><span>Janapath Tole,Biratnagar,Nepal</span></p>
+                  <p className='flex gap-2 items-center'><img src="src/assets/icon/envelope.svg" className='w-[25px]' alt="envelope" /><span>krishnaganga@gmail.com</span></p>
+                  <p className='flex gap-2 items-center'><img src="src/assets/icon/phone.svg" className='w-[25px]' alt="phone" /><span>+977 021-471609</span></p>
+                  <p className='flex gap-2 items-center'><img src="src/assets/icon/fax.svg" className='w-[25px]' alt="fax" /><span>021-471609</span></p>
                 </div>
               </div>
             </div>

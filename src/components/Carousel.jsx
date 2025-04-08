@@ -53,11 +53,12 @@ function Carousel() {
       >
         {slider.map((a) => (
           <SwiperSlide className='relative'>
+            <div className='bg-[#00000069] h-[600px] w-full z-10 absolute top-0'></div>
             <img className='h-[600px] w-full object-cover' src={a.src} alt={a.alt} />
-            <div className='absolute top-[30%] left-[10%]'>
-              <h2 className='text-4xl font-bold text-red-600 '>{a.title}</h2>
-              <h4 className='text-2xl font-medium text-yellow-500'><em>{a.goal}</em></h4>
-              <h6 className='text-lg text-blue-800'>{a.subtitle}</h6>
+            <div className='absolute top-[42%] left-[10%] z-20'>
+              <h2 className='text-4xl font-extrabold text-white '>{a.title}</h2>
+              <h4 className='text-2xl font-medium text-[#fff] mt-2'>{a.goal}</h4>
+              <h6 className='text-lg text-[#ccc]'>{a.subtitle}</h6>
             </div>
           </SwiperSlide>
         ))}
@@ -72,6 +73,14 @@ function Carousel() {
       transition: all 500ms ease;
       transform: scale(0.8);
     }
+
+    @media (max-width: 640px) {
+      .swiper-button-next,
+      .swiper-button-prev {
+      display: none !important;
+      }
+    }
+
     .swiper-button-next:hover, .swiper-button-prev:hover {
       color: #465e88;
     }

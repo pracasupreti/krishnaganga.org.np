@@ -85,8 +85,8 @@ function Banned() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-4 mx-auto">
           {banned.map((a) => (
-            <div className="bg-white shadow-lg rounded-2xl p-2 w-[250px] mx-auto hover:shadow-2xl transition duration-300 ease-in-out transform hover:scale-[1.02] flex flex-col gap-4 flex-wrap items-center text-center">
-              <img src={a.src} alt={a.alt} className="h-[90px] w-[90px] mb-4 transition-transform duration-300 group-hover:scale-110" />
+            <div className="bg-white shadow-lg rounded-2xl p-2 w-[250px] mx-auto  transition duration-300 ease-in-out transform  flex flex-col gap-4 flex-wrap items-center text-center">
+              <img src={a.src} alt={a.alt} className="h-[90px] w-[90px] mb-4 transition-transform duration-300 " />
               <h3 className="text-lg font-semibold text-[#1a1a1a] mb-2">{a.item}</h3>
               <p className="text-sm text-gray-600 px-3">{a.description}</p>
             </div>
