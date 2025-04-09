@@ -18,7 +18,7 @@ function Fee() {
 
         <div className="grid md:grid-cols-2 gap-6">
           {/* First Month Fee Card */}
-          <div className="bg-white shadow-md rounded-xl p-6 border-t-4 border-blue-500">
+          <div className="bg-white shadow-md rounded-xl p-6 border-t-4 border-[#ed1b24]">
             <h3 className="text-xl font-semibold text-blue-700 mb-3">
               First Month Fee
             </h3>
@@ -50,11 +50,11 @@ function Fee() {
           </div>
 
           {/* Monthly Fee Card */}
-          <div className="bg-white shadow-md rounded-xl p-6 border-t-4 border-green-500">
-            <h3 className="text-xl font-semibold text-green-700 mb-3">
+          <div className="bg-white shadow-md rounded-xl p-6 border-t-4 border-[#475e87]">
+            <h3 className="text-xl font-semibold text-red-500 mb-3">
               Monthly Fee (After 1st Month)
             </h3>
-            <p className="text-2xl font-bold text-green-900 mb-4">
+            <p className="text-2xl font-bold text-red-700 mb-4">
               Rs. 95,000 / month
             </p>
             <ul className="text-[#5c5c5c] list-disc ms-5 space-y-2 text-sm">

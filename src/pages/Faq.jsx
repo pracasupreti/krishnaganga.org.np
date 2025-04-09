@@ -43,21 +43,7 @@ function Faq() {
                                     aria-controls={`accordion-collapse-body-${index}`}
                                 >
                                     <span className='text-left'>{a.question}</span>
-                                    <svg
-                                        className={`w-3 h-3 ${open === index ? 'rotate-180' : ''}`}
-                                        aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 10 6"
-                                    >
-                                        <path
-                                            stroke="currentColor"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth={2}
-                                            d="M9 5 5 1 1 5"
-                                        />
-                                    </svg>
+                                    <img className={`w-5 h-5 transform transition-transform duration-300 ${open === index ? 'rotate-180' : ''}`} src="src/assets/icon/down.svg" alt="down" />
                                 </button>
                             </h2>
 
