@@ -74,7 +74,7 @@ function Carousel() {
       transform: scale(0.8);
     }
 
-    @media (max-width: 640px) {
+    @media (max-width: 860px) {
       .swiper-button-next,
       .swiper-button-prev {
       display: none !important;

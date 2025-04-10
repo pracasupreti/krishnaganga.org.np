@@ -108,7 +108,7 @@ function Header() {
           <li><Link to={'/'} className="py-2 hover:text-[#ed1b24]">Home</Link></li>
           <li><Link to={'/about'} className="py-2 hover:text-[#ed1b24]">About</Link></li>
           <li><Link to={'/treatment'} className="py-2 hover:text-[#ed1b24]">Treatment</Link></li>
-          <li><Link to={'/things-to-provide'} className="py-2 hover:text-[#ed1b24] ms-4">Things To Provide</Link></li>
+          <li><Link to={'/things-to-provide'} className="py-2 hover:text-[#ed1b24]">Things To Provide</Link></li>
           <li><Link to={'/fee'} className="py-2 hover:text-[#ed1b24]">Fee</Link></li>
           <li><Link to={'/banned-items'} className="py-2 hover:text-[#ed1b24]">Banned Items</Link></li>
           <li><Link to={'/duration'} className="py-2 hover:text-[#ed1b24]">Duration</Link></li>
