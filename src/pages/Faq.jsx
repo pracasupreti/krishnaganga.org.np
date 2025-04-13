@@ -17,7 +17,7 @@ function Faq() {
         { question: "6. Can family members visit the patient during treatment?", answer: "Yes, we encourage family involvement in the treatment process to support the patient's recovery." },
         { question: "7. Are there any age restrictions for admission?", answer: "We do not have any specific age restrictions. Our center is open to people of all ages, depending on the nature of their treatment." },
         { question: "8. Can patients continue their work or education while in treatment?", answer: "Patients may be able to continue their work or education, depending on their treatment plan. We offer flexible programs to accommodate their needs." },
-        { question: "9. How can I get in touch with the center for more information?", answer: "You can contact us through our website, or call our helpline number at +1-800-123-4567 for further assistance." },
+        { question: "9. How can I get in touch with the center for more information?", answer: "You can contact us through our website, or call our helpline number at +977 21 471609 for further assistance." },
         { question: "10. Do you offer therapy for mental health conditions?", answer: "Yes, we offer therapy and counseling services for various mental health conditions, including anxiety, depression, PTSD, and more." },
         { question: "11. Is your center accredited or licensed?", answer: "Yes, we are fully accredited and licensed by relevant regulatory bodies to provide high-quality rehabilitation services." },
         { question: "12. Do you offer group therapy sessions?", answer: "Yes, we offer both individual and group therapy sessions to promote peer support and encourage shared healing experiences." },

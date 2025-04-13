@@ -26,9 +26,9 @@ function Header() {
           <a href='tel:+977 21471609' className='flex gap-2 text-[#ccc]'><img className='h-[20px] w-[20px] invert pt-[5px]' src="src/assets/icon/phone.svg" alt="phone" />+977 21 471609</a>
           </div>
           <ul className='flex gap-4'>
-            <li><a href="#"><img className='w-[25px] h-[25px]' src="src/assets/icon/facebook.svg" alt="facebook" /></a></li>
-            <li><a href="#"><img className='w-[25px] h-[25px]' src="src/assets/icon/twitter.svg" alt="twitter" /></a></li>
-            <li><a href="#"><img className='w-[25px] h-[25px]' src="src/assets/icon/linkedin.svg" alt="linkedin" /></a></li>
+            <li><a href="#"><img className='w-[25px] h-[25px] invert' src="src/assets/icon/facebook.svg" alt="facebook" /></a></li>
+            <li><a href="#"><img className='w-[25px] h-[25px] invert' src="src/assets/icon/twitter.svg" alt="twitter" /></a></li>
+            <li><a href="#"><img className='w-[25px] h-[25px] invert' src="src/assets/icon/linkedin.svg" alt="linkedin" /></a></li>
           </ul>
         </section>
         </section>

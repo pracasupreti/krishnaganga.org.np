@@ -329,18 +329,38 @@ function Volunteer() {
               </div>
             </label>
 
-            <label htmlFor="relation">
-              <p>Relation : </p>
-              <input type="text" name='relation' className='border outline-none w-full px-4 py-1' />
+            <label htmlFor="recovery">
+              <p>Relation</p>
+              <select className='w-full border outline-none px-4 py-1' defaultChecked='0' name="recovery_stage" id="recovery" onChange={(e) => {
+                const inputField = document.getElementById('otherRealtion');
+                if (e.target.value === 'otherRealtion') {
+                  inputField.style.display = 'block'; // Show the input field when 'Others' is selected
+                } else {
+                  inputField.style.display = 'none'; // Hide it when another option is selected
+                }
+              }}>
+                <option value="" disabled selected>Select an option</option>
+                <option value="father">Father</option>
+                <option value="mother">Mother</option>
+                <option value="brother">Brother</option>
+                <option value="sister">Sister</option>
+                <option value="husband">Husband</option>
+                <option value="wife">Wife</option>
+                <option value="otherRelation">Others</option>
+              </select>
+              <input type="text" id="otherRealtion" className='outline-none border px-4 py-1 w-full' style={{ display: 'none' }} placeholder="Please specify" />
+            </label>
+
+
+            <label htmlFor="application date">
+              <input type="date" value={currentDate} name="application_date" id="application_date" className='border w-full px-4 py-2 outline-none' />
             </label>
 
             <label htmlFor="policy">
               <input type="checkbox" name="policy" id="policy" className='w-4 h-4' />&nbsp; I agree to follow the center’s rules and confidentiality policy
             </label>
 
-            <label htmlFor="application date">
-              <input type="date" value={currentDate} name="application_date" id="application_date" className='border w-full px-4 py-2 outline-none' />
-            </label>
+            
             <div className='flex gap-4'>
             <button type='submit' className='border outline-none px-4 py-1 hover:shadow-lg '>Submit</button>
             <button type='clear' className='border outline-none px-4 py-1 hover:shadow-lg'><Link to={'/volunteer'}>Clear</Link></button>
