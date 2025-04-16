@@ -37,7 +37,7 @@ function Contact() {
                   <p className='flex gap-2 items-center'><img src="src/assets/icon/geo.svg" className='w-[20px]' alt="geo-alt" /><span>Janapath Tole,Biratnagar,Nepal</span></p>
                   <p className='flex gap-2 items-center'><img src="src/assets/icon/envelope.svg" className='w-[20px]' alt="envelope" /><span>krishnaganga@gmail.com</span></p>
                   <p className='flex gap-2 items-center'><img src="src/assets/icon/phone.svg" className='w-[20px]' alt="phone" /><span>+977 021-471609</span></p>
-                  <p className='flex gap-2 items-center'><img src="src/assets/icon/fax.svg" className='w-[20px]' alt="fax" /><span>021-471609</span></p>
+                  <p className='flex gap-2 items-center'><img src="src/assets/icon/fax.svg" className='w-[20px]' alt="fax" /><span>977-21-471609</span></p>
                 </div>
               </div>
             </div>
